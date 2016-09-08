@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>airbnb</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" >
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+  <body>
+    <header id="about">
+      <video src="https://a0.muscache.com/airbnb/static/P1-background-vid-compressed-2.mp4" autoplay poster="posterimage.jpg">
+      </video>
+      <div  id="menu">
+        <nav>
+          <div>
+            <a href="./index.html" alt=""><img class="logo" src="./img/airbnb_logo.png" alt="logo">
+          </div>
+          <ul>
+            <li class="first"><a href="#share">Devenez hôte</a></li>
+            <li><a href="#dev">Aide</a></li>
+            <li><a href="#formation">Inscription</a></li>
+            <li><a href="#blog">Connexion</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="title">
+        <h1>vivez la-bas</h1>
+        <h5>Réservez des logements auprès d'hôtes locaux dans plus de 191 pays et vivez là-bas, comme chez vous.</h5>
+        <span class="play">
+          <i class="fa fa-play-circle" aria-hidden="true"></i>
+        </span>
+      </div>
+      <div class="barsearch">
+          <form id="src" class="search" method="get">
+              <input type="text" placeholder="Where ?">
+              </input>
+              <input type="date" name="from"></input>
+              <input type="date" name="to"></input>
+              <select form="src">
+                <option value="nbrperson">1 personne</option>
+                <option value="nbrperson">2 personnes</option>
+                <option value="nbrperson">3 personnes</option>
+                <option value="nbrperson">4 personnes</option>
+                <option value="nbrperson">5+ personnes</option>
+              </select>
+              <input type="button" class="btn-find" onSubmit="retun search()" value="Rechercher"></input>
+          </form>
+      </div>
+    </header>
+    <section class="section" id="hidden">
+    </section>
+    <section class="section" id="">
+      <div class="presentation">
+        <div class="images">bibi</div>
+        <div class="description">
+          <form>
+            <h3>Ouvrez la porte à un voyageur et à une nouvelle vie</h3>
+            <p>Gagnez de l'argent en accueillant des voyageurs.</p>
+            <input type="button" class="btn-submit" onclick="return seeMore()" value="Voire plus..."></input>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="theme">
+      <div class="t-section">
+        <h2>Just Maried</h2>
+        <h5>Des lieux magiques pour célébrer son mariage </h5>
+      </div>
+      <div id="ctr">
+        <div class="ctr-line" name="wishlist">
+          <div class="galery-img c3">
+            <figure>
+              <a href="#"><img src="https://a2.muscache.com/im/pictures/93177167/cc59c3d9_original.jpg?aki_policy=xx_large" /></a>
+              <figcaption>
+                <img src="http://iletaitunepub.fr/wp-content/uploads/2014/07/airbnb_nouveau_logo_4.png"/>
+                <h4>Hamptons</h4>
+                <p>New-work, NY</p>
+              </figcaption>
+              <figcaption class="price">350 €</figcaption>
+           </figure>
+          </div>
+          <div class="galery-img c3">
+            <figure>
+              <a href="#"><img src="https://a2.muscache.com/im/pictures/ea485c17-4051-44fb-aaa9-5e437f343881.jpg?aki_policy=x_large" /></a>
+              <figcaption>
+                <img src="./img/pedobears.png"/>
+                <h4>Vieux-port</h4>
+                <p>Montréal, QC</p>
+              </figcaption>
+              <figcaption class="price">140 € </figcaption>
+           </figure>
+          </div>
+          <div class="galery-img c3">
+            <figure>
+              <a href="#"><img src="https://a2.muscache.com/im/pictures/25ef9eab-78a7-4d8d-b8db-232a15072213.jpg?aki_policy=xx_large" /></a>
+              <figcaption>
+                <img src="http://iletaitunepub.fr/wp-content/uploads/2014/07/airbnb_nouveau_logo_10.jpg"/>
+                <h4>Tulear</h4>
+                <p>Madagascar</p>
+              </figcaption>
+              <figcaption class="price">2350 €</figcaption>
+           </figure>
+         </div>
+        </div>
+    </div>
+    <input class="btn-dest" type="button" onsubmit="return smDest()" value="Voir toutes les destination"></input>
+    </section>
+  </body>
+</html>

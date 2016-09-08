@@ -1,0 +1,415 @@
+/* AIRBNB */
+/* instruction for change */
+
+
+
+/* RESET STYLE */
+*{
+  box-sizing: border-box;
+}
+html{
+  width: 100%;
+  position: relative;
+  min-height: 100%;
+  text-align: center;
+}
+head{
+  display: none;
+}
+body{
+  display: block;
+  padding-bottom: 100px;
+  width:950px;
+  margin: 0 auto;
+  min-height: 100%;
+  text-align: left;
+  padding: 0 10px;
+  background-color: #efefef;
+  font-family: sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: sans-serif;
+  margin: 0;
+  display: inline-block;
+  color: #484848;
+}
+h1{
+  display: block;
+  font-size: 3.7em;
+  line-height: 1.3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+a, p, ul, li{
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #484848;
+}
+table{
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+/* ORDINATEUR */
+/* PARTIE SUPPERIEUR */
+header{
+  display: block;
+}
+section{
+  padding: 10px;
+}
+footer{
+  height: 100px;
+  display: inline-block;
+  width: 100%
+}
+figure{
+  margin: 0;
+}
+/* HEADER */
+/* contenu fixe - menu +s earchbar + carousel */
+#menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  vertical-align: middle;
+  color: #ffffff;
+  z-index: 500;
+
+}
+.logo{
+  display: inline-block;
+  float: left;
+  width: 100px;
+  margin: 5px;
+  filter: invert(1);
+  -webkit-filter: invert(1);
+  -moz-filter: invert(1);
+  -o-filter: invert(1);
+  -ms-filter: invert(1);
+}
+#menu > nav {
+  width: 100%;
+  margin: 0 auto;
+  display: inline-block;;
+  position: relative;
+}
+#menu > nav > ul > li{
+  display: inline-block;
+  float: left;
+  padding: 5px 20px 10px 0;
+}
+#menu .first{
+  border: 2px solid #ffffff;
+  padding: 5px;
+  margin-right: 20px;
+  border-radius: 2px ;
+}
+#menu .first:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#menu > nav > ul{
+  display: inline-block;
+  float: right;
+  margin: 0 auto;
+}
+#menu a{
+  font-family: 'Helvetica', sans-serif;
+  color: #ffffff;
+}
+#about{
+  display: block;
+  max-height: 586px;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  vertical-align: middle;
+}
+#about video{
+  display: block;
+  width: 100%;
+  background: url("https://a0.muscache.com/airbnb/static/Live-There_Tokyo_FarhadSamari-40.jpg") no-repeat center center;
+}
+
+/* TITRES PAGE */
+.title{
+  display: table;
+  position: absolute;
+  vertical-align: middle;
+  top: 0%;
+  z-index: 500;
+  margin: 15%;
+}
+.title h5{
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.play{
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.fa-play-circle::before{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 8em;
+  text-align: center;
+  vertical-align: middle;
+}
+.fa-play-circle :hover{
+  color: rgba(255, 255, 255, 1);
+}
+
+/* BARRE RECHERCHE DESTINATION VOYAGE */
+#src{
+
+}
+.barsearch{
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  padding: 25px 12%;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+ }
+ .search
+ {
+   display: inline-block;
+   width: 100%;
+   height: 50px;
+   background: #ffffff;
+   border: 1px solid;
+   border-radius: 4px;
+ }
+ .search input, .search select{
+   display: inline-block;
+   float: left;
+   border: none;
+   border-left: 1px solid;
+   height: 48px;
+   padding: 10px;
+   width: 16%;
+   background-color: #ffffff;
+ }
+ .search input[type="text"]{
+    width: 36%;
+    border-radius: 4px 0 0 4px ;
+  }
+  .search input[name="to"]{
+     border: none
+   }
+
+   /* A voir pour modifier la valeur de la flèche avant
+   .search input[name="to"]::before{
+      content: url("../img/arrow.png");
+      height: 10px;
+      width: 27px;
+      display: block;
+
+    }
+    */
+
+  .search input[type="button"]{
+    float: right;
+    height: 100%;
+    background: #fe5a5f;
+    border-radius: 0 4px 4px 0;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+  }
+
+ /* SECTION */
+  /* contenu du site */
+
+ /* SECTION */
+ /* contenu du site */
+ #hidden{
+   visibility: hidden;
+   height: 586px;
+ }
+
+ .section{
+   display: block;
+   position: relative;
+   width: 100%;
+   height: auto;
+   margin-bottom: 50px;
+   padding: 0;
+   text-align: center;
+ }
+ .presentation{
+   display: inline-block;
+   height: 100%;
+   background-color: #ffffff;
+   width: 100%
+ }
+ .presentation > * { /* prends tous  les premiers enfants pointés par l'objet*/
+   height: 344px;
+ }
+ .images{
+   display: inline-block;
+   float: left;
+   width: 70%;
+   overflow: hidden;
+   background: yellow url("https://a1.muscache.com/airbnb/static/homepages/host_banner/welcome-guest-5871637891339a7308a838003ab942bd.jpg") no-repeat center center;
+ }
+ .description{
+   display: inline-block;
+   float: left;
+   width: 30%;
+   padding: 40px;
+ }
+ .description h3, .description p{
+   padding-bottom: 15px;
+ }
+ .btn-submit{
+   background: #027a87;
+   box-shadow: 1px 2px 4px 1px #005e69 ; /* OPTION DE BOX SHADOW  h-pos v-pos (blur) (spread) (color) (inset); */
+   border-bottom-color: #006671;
+   width: 100%;
+   height: 45px;
+   border: none;
+   border-radius: 4px;
+   font-weight: 700;
+   color: #ffffff;
+ }
+.btn-submit:hover{
+  border-color: #009aab;
+  border-bottom-color: #006671;
+  background-color: #009aab;
+}
+/* SECTION BY TYPE*/
+#theme{
+
+}
+.t-section{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.t-section > *{
+  display: block;
+  position: relative;
+  text-align: center;
+  line-height: 1.3em;
+}
+.t-section h2{
+  font-size: 2.5em;
+}
+
+/* galery d ela section - possible de rajouter des bloc c3 à l'infini*/
+#ctr{
+  display: block;
+  width: 100%;
+  background: none;
+}
+/* ctr-line nombre de ligne contenant obj(gakery etc ....) dans un container*/
+/* ici 3 obj sur 1lign */
+.c3{
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 31.33%;
+  overflow: hidden;
+  height: 292px;
+}
+.c3:nth-child(1){
+  margin-right: 1.5%;
+}
+.c3:nth-child(3){
+  margin-left: 1.5%;
+}
+
+.c3:nth-child(2){
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+/*version image caption*/
+.galery-img img{
+  width: 150%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* version image de fond et nom image intégrée */
+/* problème d'accessibilité voire peut être paramétré en jS si incrémentation
+/* des bocs.
+
+.galery-img{
+  background: url("https://a2.muscache.com/im/pictures/93177167/cc59c3d9_original.jpg?aki_policy=xx_large") no-repeat center center;
+}
+*/
+
+/* legend img galery + lien */
+.galery-img a{
+  height: 100%;
+  display: inline-block;
+}
+.galery-img figcaption{
+  position: absolute;
+  vertical-align: middle;
+  top: 30%;
+  left:33%;
+}
+.galery-img  h4, .galery-img p, .galery-img figcaption{
+  color: #ffffff;
+  text-align: center;
+}
+.galery-img  h4{
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.galery-img  p{
+  font-size: 0.8em;
+}
+#ctr .price{
+  font-size: 1.4em;
+  top:inherit;
+  left: 0;
+  bottom: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+}
+#ctr figcaption img{
+  height: 80px;
+  width: 80px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0
+}
+.btn-dest{
+  margin: 30px;
+  background: #484848;
+  border-bottom-color: #484848;
+  width: 25%;
+  height: 45px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.btn-dest:hover{
+ border-color:#484848;
+ border-bottom-color: #484848;
+ background: #fe5a5f;
+}
